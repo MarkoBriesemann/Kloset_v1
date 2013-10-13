@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta id="viewport" name="viewport"
+          content="width=device-width,initial-scale=1,maximum-scale=10">
+    <title>Kloset</title>
+    <link rel="stylesheet" href="css/kloset.min.css">
+    <link rel="stylesheet" href="css/jquery-mobile.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/buttons.css">
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!--<script type="text/javascript" src="js/cordova-1.5.0.js"></script>-->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery-mobile.min.js"></script>
+</head>
+<style>
+
+.cbutton{display:block;width:100px;height:100px;border-radius:50px;font-size:20px;color:#fff;line-height:100px;text-align:center;background:#fff}
+
+
+.cbutton2{ display:block;float: left;width:100px;height:100px;border-radius:50px;font-size:20px;text-align:center;background:#000}
+
+
+</style>
+
+
+<body>
+
+<!-- Login Page -->
+<div data-role="page" data-theme="a" id="pageLogin">
+    <br>
+
+    <div align="center">
+        <img src="./img/kloset_logo.png">
+    </div>
+
+    <div data-role="content" id="identification">
+        <a href="#" data-role="button" data-theme="c">Facebook</a> <a
+        href="#" data-role="button" data-theme="b">Twitter</a>
+
+        <form method="GET" data-ajax="false" onsubmit="return false;">
+            <label for="loginEmail"></label>
+            <input type="email" name="loginEmail" data-theme="b" id="loginEmail" placeholder="Email" >
+            <label for="loginPassword"></label>
+            <input type="password" name="loginPassword" data-theme="b" id="loginPassword" value=""
+            placeholder="Password here">
+            <!--<button id="connect" onclick="login()">Sign in</button>-->
+            
+            <button style="background-color:#000000;" id="connect">
+			<a href="login()" id="connect" class="button button-circle button-highlight">CONNECT</a></button>
+		
+			<div class="cbutton">
+			<a href="#" id="connect" class=" icon-back_icon "></a>
+			</div>
+	
+        </form>
+        <span id="error" class="error">There is a problem with your identifiers</span>
+        <div class="float">
+            <a href="#pageRegister">Sign up</a>
+            <a href="#lost">Did you loose your password</a>
+        </div>
+    </div>
+</div>
+
+<!-- lost Pwd Page -->
+<!--<div data-role="page" id="lost" data-theme="a" data-add-back-btn="true">
+    <div data-role="header" data-position="fixed">
+        <h1>Password lost ?</h1>
+    </div>
+
+    <div data-role="content">
+        <p>
+            What you did loose your password? <br> HA ha, that happens to
+            me every day... Enter your email and we send it back to you.
+        </p>
+
+        <form>
+            <label for="idlost"></label> <input type="email" data-theme="b"
+            name="idlost" id="idlost" value="" placeholder="Your email">
+            <a data-theme="c" href="#login" data-role="button">Send me the
+                email</a>
+        </form>
+    </div>
+</div>
+
+<!-- Registration Page -->
+<div data-role="page" id="pageRegister" data-theme="a" data-add-back-btn="true">
+    <div data-role="header" data-position="fixed">
+        <h1>New Kloseter</h1>
+    </div>
+
+    <div data-role="content" id="registerContent">
+        <form>
+            <label for="registerEmail">Votre adresse email</label>
+            <input data-theme="b" type="email" name="registerEmail" id="registerEmail" value="" placeholder="Votre e-mail">
+            <label for="registerPassword">Mot de passe</label>
+            <input data-theme="b" type="password" data-clear-btn="false" name="registerPassword" id="registerPassword" value="" autocomplete="off"
+            placeholder="Sandrinedu59">
+            <label for="registerPassword2">Rataper votre mot de passe</label>
+            <input data-theme="b" type="password" data-clear-btn="false" name="registerPassword2" id="registerPassword2" value="" autocomplete="off"
+            placeholder="Sandrinedu59">
+            <label for="registerName">Votre nom</label>
+            <input data-theme="b" type="text" name="name" id="registerName" value="" placeholder="Votre nom">
+            <!--<a href="#" data-theme="c" data-role="button" id="register" onclick="register()">Sign up</a>-->
+            <a href="#" data-theme="c" data-role="button" id="register">Sign up</a>
+        </form>
+    </div>
+</div>
+<script src="js/client.js"></script>
+</body>
+</html>

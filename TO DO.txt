@@ -1,0 +1,17 @@
+log out
+
+
+view.js: line 14
+Uncaught SyntaxError: Unexpected token u 
+
+uncomment works
+
+
+5. save clothes
+
+
+
+
+
+
+
